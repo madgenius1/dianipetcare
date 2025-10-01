@@ -1,0 +1,20 @@
+{
+  "name": "dianipetcare",
+  "version": "1.0.0",
+  "description": "Pet care booking webapp (frontend + backend monorepo)",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "dev": "pnpm -r --parallel dev", 
+    "build": "pnpm -r build"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}
