@@ -15,7 +15,7 @@ export default function Navbar() {
     const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
 
     return (
-        <nav className="sticky top-0 z-50 bg-transparent backdrop-blur-sm shadow-sm">
+        <nav className="sticky top-0 z-50 bg-transparent/80 backdrop-blur-sm shadow-sm">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className="flex justify-start px-4">
                     <Link href="/">
@@ -28,9 +28,10 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="hidden lg:flex lg:justify-center space-x-6">
-                    <Link href="/services" className="text-gray-800 font-medium hover:underline">Services</Link>
-                    <Link href="/booking" className="text-gray-800 font-medium hover:underline">Booking</Link>
-                    <Link href="/about" className="text-gray-800 font-medium hover:underline">About</Link>
+                    <Link href="/services" className="text-gray-950 font-semibold hover:underline">Services</Link>
+                    <Link href="/booking" className="text-gray-950 font-semibold hover:underline">Booking</Link>
+                    <Link href="/packages" className="text-gray-950 font-semibold hover:underline">Care Packages</Link>
+                    <Link href="/about" className="text-gray-950 font-semibold hover:underline">About</Link>
                 </div>
                 <div className="md:hidden">
                     <button
@@ -47,7 +48,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="lg:flex hidden justify-end">
-                    <Link href="/contact" className="hover:text-[#2EC4B6] text-white hover:bg-white border hover:border-[#2EC4B6] bg-[#2EC4B6] rounded-md px-6 py-3 font-medium hover:underline">Contact</Link>
+                    <Link href="/contact" className="hover:text-[#e4adcc] text-white hover:bg-white border-2 hover:border-[#e4adcc] bg-[#e4adcc] rounded-lg px-6 py-3 font-medium hover:underline">Contact</Link>
                 </div>
 
                 <div
@@ -59,6 +60,7 @@ export default function Navbar() {
                     <ul className="flex flex-col p-6 space-y-4 list-none">
                         <li><Link href="/services" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Services</Link></li>
                         <li><Link href="/booking" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Booking</Link></li>
+                        <li><Link href="/packages" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Care Packages</Link></li>
                         <li><Link href="/about" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>About Us</Link></li>
                         <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Contact Us</Link></li>
                         <li><Link href="/privacy" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Privacy Policy</Link></li>
