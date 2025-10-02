@@ -44,7 +44,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className=" dark:bg-gray-100 bg-gray-800">
+        <footer className=" bg-[#F6F2E9]">
             <div className="lg:px-8 md:px-6 px-4 lg:py-20 md:py-16 py-12 max-w-screen-xl mx-auto">
                 <div className="flex lg:flex-row flex-col lg:justify-between gap-4 p-4">
                     {/* Left Content */}
@@ -52,13 +52,13 @@ export default function Footer() {
                         <div className="flex flex-col">
                             <Link href="/" className="-m-1.5 p-2">
                                 <Image
-                                    src="/foom.svg"
+                                    src="/footerlogo.jpg"
                                     alt="Diani Pet Care logo"
                                     width={140}
                                     height={70}
                                 />
                             </Link>
-                            <p className="text-gray-900 font-semibold text-md">
+                            <p className="text-gray-950 font-semibold text-md">
                                 Diani Pet Care. <br />
                                 Your reliable pet care partner for dog walking, grooming, and boarding.
                             </p>

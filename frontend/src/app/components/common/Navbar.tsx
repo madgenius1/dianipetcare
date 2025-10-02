@@ -1,22 +1,73 @@
+'use client'
 
 import Link from "next/link"
+import Image from "next/image";
+import { RiMenu3Fill, RiCloseLargeFill } from "react-icons/ri";
+import { useState } from "react";
+
+
 
 export default function Navbar() {
+    const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+    const toggleDropDownOpen = () => setIsDropDownOpen(prev => !prev);
+
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
+
     return (
-        <nav className="lg:px-8 md:px-6 px-4 py-5 max-w-screen-xl mx-auto sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
+        <nav className="lg:px-8 md:px-6 px-4 py-5 max-w-screen-xl mx-auto sticky top-0 z-50 bg-transparent backdrop-blur-sm shadow-md">
             <div className="flex items-center justify-between ">
-                <div className="flex justify-start">
-                    <Link href="/" className="text-gray-950 font-medium">Diani Pet Care</Link>
+                <div className="flex justify-start px-4">
+                    <Link href="/">
+                        <Image
+                            src="/headerlogo.jpg"
+                            alt="diani pet care logo"
+                            width={120}
+                            height={60}
+                        />
+                    </Link>
                 </div>
-                <div className="flex justify-center">
-                    <div className="flex justify-between space-x-6">
+                <div className="lg:justify-center hidden lg:flex md:flex sm:hidden">
+                    <div className="space-x-6">
                         <Link href="/services" className="text-gray-800 font-medium hover:underline">Services</Link>
                         <Link href="/booking" className="text-gray-800 font-medium hover:underline">Booking</Link>
                         <Link href="/about" className="text-gray-800 font-medium hover:underline">About</Link>
                     </div>
                 </div>
-                <div className="flex justify-end">
-                    <Link href="/contact" className="hover:text-gray-800 hover:bg-gray-100 rounded-md px-6 py-3 font-medium hover:underline">About</Link>
+                <div className="flex justify-end space-x-2">
+                    <div className="md:hidden">
+                        <button
+                            onClick={toggleMobileMenu}
+                            aria-label="Toggle mobile menu"
+                            className="p-2 rounded-md hover:bg-gray-200 focus:outline-none"
+                        >
+                            {isMobileMenuOpen ? (
+                                <RiCloseLargeFill size={30} className="text-neutral-800" />
+                            ) : (
+                                <RiMenu3Fill size={30} className="text-neutral-800" />
+                            )}
+                        </button>
+                    </div>
+                </div>
+
+                <div className="lg:flex hidden justify-end">
+                    <Link href="/contact" className="hover:text-gray-800 hover:bg-gray-100 rounded-md px-6 py-3 font-medium hover:underline">Contact</Link>
+                </div>
+
+                <div
+                    className={`absolute left-0 w-full transition-all duration-400 ease-in-out md:hidden bg-neutral-500 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-lg ${isMobileMenuOpen
+                        ? 'top-full opacity-100 visible'
+                        : '-top-96 opacity-0 invisible'
+                        }`}
+                >
+                    <ul className="flex flex-col p-6 space-y-4 list-none">
+                        <li><Link href="/services" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Services</Link></li>
+                        <li><Link href="/booking" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Booking</Link></li>
+                        <li><Link href="/about" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>About Us</Link></li>
+                        <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Contact Us</Link></li>
+                        <li><Link href="/privacy" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Privacy Policy</Link></li>
+                        <li><Link href="/terms" className="block px-4 py-2 font-semibold hover:bg-gray-200 rounded-md" onClick={toggleMobileMenu}>Terms & Conditions</Link></li>
+                    </ul>
                 </div>
             </div>
         </nav>
