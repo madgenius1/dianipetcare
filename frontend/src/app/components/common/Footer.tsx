@@ -49,17 +49,16 @@ export default function Footer() {
                 <div className="flex lg:flex-row flex-col lg:justify-between gap-4 p-4">
                     {/* Left Content */}
                     <div className="lg:w-1/3 w-full flex flex-col gap-4 py-4">
-                        <div className="flex flex-col">
-                            <Link href="/" className="-m-1.5 p-2">
+                        <div className="flex flex-col py-2">
+                            <Link href="/">
                                 <Image
                                     src="/footerlogo.jpg"
                                     alt="Diani Pet Care logo"
-                                    width={140}
-                                    height={70}
+                                    width={160}
+                                    height={80}
                                 />
                             </Link>
                             <p className="text-gray-950 font-semibold text-md">
-                                Diani Pet Care. <br />
                                 Your reliable pet care partner for dog walking, grooming, and boarding.
                             </p>
                         </div>
@@ -72,7 +71,7 @@ export default function Footer() {
                             ))}
                         </div> */}
                         <p className="py-4 text-sm lg:text-md font-medium text-white dark:text-gray-900">
-                            Diani Mall, Beach Road, Ukunda
+                            Diani, Ukunda
                         </p>
                         <div className="py-6 flex flex-row space-x-4 ">
                             {socials.map((social, index) =>
