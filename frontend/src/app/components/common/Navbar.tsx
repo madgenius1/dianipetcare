@@ -15,7 +15,7 @@ export default function Navbar() {
     const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
 
     return (
-        <nav className="sticky top-0 z-50 bg-transparent/80 backdrop-blur-sm shadow-sm">
+        <nav className="sticky top-0 z-50 bg-[#f6f2e9] backdrop-blur-sm shadow-sm">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className="flex justify-start px-4">
                     <Link href="/">

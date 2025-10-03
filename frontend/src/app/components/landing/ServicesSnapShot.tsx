@@ -40,7 +40,7 @@ const SERVICES: Service[] = [
         serviceId: "pettransport",
         serviceName: "Pet Transport",
         name: "Movement and Transport",
-        bgImage: "/petgrooming.webp",
+        bgImage: "/pettransport.webp",
         classes: "lg:col-span-4 lg:row-span-2 md:col-span-4 md:row-span-2"
     },
     {
@@ -54,7 +54,7 @@ const SERVICES: Service[] = [
         serviceId: "pettraining",
         serviceName: "Dog Training",
         name: "Certified Dog Training",
-        bgImage: "/petboarding.webp",
+        bgImage: "/pettraining.webp",
         classes: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-2"
     },
 ];
