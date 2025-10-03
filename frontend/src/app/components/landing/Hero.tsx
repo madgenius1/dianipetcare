@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative flex items-center justify-center min-h-screen bg-[url(/bg.webp)] lg:bg-[url(/lgbg.webp)]  bg-cover bg-center bg-no-repeat ">
+        <section className="relative flex items-center justify-center min-h-screen bg-[url(/bg.webp)] lg:bg-[url(/lgbg.webp)] md:bg-[url(/lgbg.webp)]  bg-cover bg-center bg-no-repeat ">
             <div className="absolute inset-0 bg-gray-100 opacity-20"></div>
 
-            <div className="relative z-10 container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="relative z-10 max-w-screen-xl container mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
                 <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
                     {/* Company Name / Tagline */}
                     <div className="mb-4 lg:mb-6">
@@ -34,16 +34,16 @@ export default function Hero() {
                     */}
 
                     {/* Call to Action Button */}
-                    <div className="py-4 flex lg:flex-row flex-col gap-4">
+                    <div className="py-4 flex lg:flex-row md:flex-row flex-col gap-4">
                         <Link
                             href="/booking"
-                            className="inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
+                            className="z-5 inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
                         >
                             Book Now
                         </Link>
                         <Link
                             href="/packages"
-                            className="inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
+                            className="z-5 inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
                         >
                             Packages
                         </Link>

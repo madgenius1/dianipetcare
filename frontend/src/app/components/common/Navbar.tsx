@@ -33,7 +33,7 @@ export default function Navbar() {
                     <Link href="/packages" className="text-gray-950 font-semibold hover:underline">Care Packages</Link>
                     <Link href="/about" className="text-gray-950 font-semibold hover:underline">About</Link>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden ">
                     <button
                         onClick={toggleMobileMenu}
                         aria-label="Toggle mobile menu"
@@ -47,7 +47,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                <div className="lg:flex hidden justify-end">
+                <div className="lg:flex md:flex hidden justify-end">
                     <Link href="/contact" className="hover:text-[#e4adcc] text-white hover:bg-white border-2 hover:border-[#e4adcc] bg-[#e4adcc] rounded-lg px-6 py-3 font-medium hover:underline">Contact</Link>
                 </div>
 
