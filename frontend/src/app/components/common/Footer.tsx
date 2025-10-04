@@ -6,7 +6,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 
 const links = [
-    { url: "mailto:info@foom.app", title: "info@foom.app" },
+    { url: "mailto:book@dianipetcare.com", title: "book@dianipetcare.com" },
     { url: "tel:+254712345678", title: "+254 712 345 678" },
     { url: "tel:+254712345678", title: "+254 712 345 678" },
 ]
@@ -49,27 +49,28 @@ export default function Footer() {
                 <div className="flex lg:flex-row flex-col lg:justify-between gap-4 p-4">
                     {/* Left Content */}
                     <div className="lg:w-1/3 w-full flex flex-col gap-4 py-4">
-                        <div className="flex flex-col py-2">
+                        <div className="flex flex-col py-2 space-y-2">
                             <Link href="/">
                                 <Image
                                     src="/footerlogo.jpg"
                                     alt="Diani Pet Care logo"
-                                    width={160}
+                                    width={200}
                                     height={80}
                                 />
                             </Link>
                             <p className="text-gray-950 font-semibold text-md">
                                 Your reliable pet care partner for dog walking, grooming, and boarding.
                             </p>
-                        </div>
-                        {/* <div className="lg:py-8 md:py-6 py-4 flex flex-col space-y-2">
+                            <div className="py-4 flex flex-col gap-2">
                             {links.map((link, index) =>
                             (
                                 <Link key={index} href={link.url} className="text-sm lg:text-md hover:underline font-medium text-white dark:text-gray-900">
                                     {link.title}
                                 </Link>
                             ))}
-                        </div> */}
+                        </div>
+                        </div>
+                        
                         <p className="py-4 text-sm lg:text-md font-medium text-white dark:text-gray-900">
                             Diani, Ukunda
                         </p>
@@ -83,7 +84,7 @@ export default function Footer() {
                         </div>
                     </div>
                     {/* Right Content */}
-                    <div className="lg:w-2/3 w-full lg:flex lg:justify-end lg:px-12 md:px-8">
+                    <div className="lg:w-2/3 w-full lg:flex lg:justify-end lg:px-12 md:px-8 py-4">
                         <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 md:grid-cols-2">
                             {details.map((section, index) => (
                                 <div key={index} className="flex flex-col space-y-2">
