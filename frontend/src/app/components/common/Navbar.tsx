@@ -15,7 +15,7 @@ export default function Navbar() {
     const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
 
     return (
-        <nav className="sticky top-0 z-50 bg-[#f6f2e9] backdrop-blur-sm shadow-sm">
+        <nav className="sticky top-0 z-50 bg-[#f6f2e9]">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className="flex justify-start px-4">
                     <Link href="/">
@@ -48,7 +48,13 @@ export default function Navbar() {
                 </div>
 
                 <div className="lg:flex md:flex hidden justify-end">
-                    <Link href="/contact" className="hover:text-[#e4adcc] text-white hover:bg-white border-2 hover:border-[#e4adcc] bg-[#e4adcc] rounded-lg px-6 py-3 font-medium hover:underline">Contact</Link>
+                    <Link href="/contact" className="px-8 py-4 
+                text-lg font-bold 
+                bg-amber-400 text-gray-900 
+                rounded-xl 
+                hover:bg-amber-300 transition duration-300 
+                shadow-xl 
+                transform hover:scale-[1.03] hover:underline">Contact</Link>
                 </div>
 
                 <div

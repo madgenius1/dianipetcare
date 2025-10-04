@@ -6,6 +6,7 @@ interface Service {
     name: string;
     bgImage: string;
     classes: string;
+    rates: string;
 }
 
 const Link: React.FC<{ href: string; children: React.ReactNode; className: string }> = ({ href, children, className }) => (
@@ -18,7 +19,8 @@ const SERVICES: Service[] = [
     {
         serviceId: "petgrooming",
         serviceName: "Pet Grooming",
-        name: "Pet Grooming",
+        name: "Pet Cleaning and Grooming",
+        rates: "From Ksh. 3400",
         bgImage: "/petgrooming.webp",
         classes: "lg:col-span-4 lg:row-span-2 md:col-span-4 md:row-span-3"
     },
@@ -26,6 +28,7 @@ const SERVICES: Service[] = [
         serviceId: "dogwalking",
         serviceName: "Dog Walking",
         name: " Outdoor Dog Walks",
+        rates: "From Ksh. 1000 per hour",
         bgImage: "/petwalking.webp",
         classes: "lg:col-span-2 lg:row-span-2 md:col-span-2 md:row-span-2"
     },
@@ -33,6 +36,7 @@ const SERVICES: Service[] = [
         serviceId: "petsitting",
         serviceName: "Pet Sitting",
         name: "In-Home Pet Sitting",
+        rates: "From Ksh. 800 per day",
         bgImage: "/petsitting.webp",
         classes: "lg:col-span-2 lg:row-span-2 md:col-span-2 md:row-span-2"
     },
@@ -41,6 +45,7 @@ const SERVICES: Service[] = [
         serviceName: "Pet Transport",
         name: "Movement and Transport",
         bgImage: "/pettransport.webp",
+        rates: "From Ksh. 1000",
         classes: "lg:col-span-4 lg:row-span-2 md:col-span-4 md:row-span-2"
     },
     {
@@ -48,6 +53,7 @@ const SERVICES: Service[] = [
         serviceName: "Pet Boarding",
         name: "Overnight Pet Boarding",
         bgImage: "/petboarding.webp",
+        rates: "From Ksh. 1200 per night",
         classes: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-2"
     },
     {
@@ -55,6 +61,7 @@ const SERVICES: Service[] = [
         serviceName: "Dog Training",
         name: "Certified Dog Training",
         bgImage: "/pettraining.webp",
+        rates: "From Ksh. 25000",
         classes: "lg:col-span-3 lg:row-span-2 md:col-span-4 md:row-span-2"
     },
 ];
@@ -109,6 +116,9 @@ export default function ServicesSnapShopt() {
                                 <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight drop-shadow-lg group-hover:translate-y-[-2px] transition-transform duration-500">
                                     {service.name}
                                 </h3>
+                                <p className="text-sm font-medium  text-white mb-1 opacity-80">
+                                    {service.rates}
+                                </p>
                             </div>
                         </Link>
                     ))}

@@ -37,13 +37,25 @@ export default function Hero() {
                     <div className="py-4 flex lg:flex-row md:flex-row flex-col gap-4">
                         <Link
                             href="/booking"
-                            className="z-5 inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
+                            className="z-5 inline-block px-8 py-4 
+                text-lg font-bold 
+                bg-amber-400 text-gray-900 
+                rounded-xl 
+                hover:bg-amber-300 transition duration-300 
+                shadow-xl 
+                transform hover:scale-[1.03]"
                         >
                             Book Now
                         </Link>
                         <Link
                             href="/packages"
-                            className="z-5 inline-block bg-[#e4adcc] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#2EC4B6] transition duration-300 transform hover:scale-105"
+                            className="z-5 inline-block px-8 py-4 
+                text-lg font-bold 
+                bg-amber-400 text-gray-900 
+                rounded-xl 
+                hover:bg-amber-300 transition duration-300 
+                shadow-xl 
+                transform hover:scale-[1.03]"
                         >
                             Packages
                         </Link>
