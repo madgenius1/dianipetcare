@@ -7,11 +7,9 @@ export default function Pricing() {
             pets: "Up to 3 pets/household",
             walks: "2 walks/week",
             washes: "1 wash/week",
-            grooming: "1 grooming/month",
+            grooming: "0 grooming/month",
             includes: [
-                "Feeding & basic cleanup",
-                "WhatsApp photo updates",
-                "Priority chat support",
+                "Basic cleanup",
             ],
         },
         {
@@ -19,12 +17,11 @@ export default function Pricing() {
             name: "Gold Care",
             price: "KES 5,000",
             pets: "Up to 6 pets/household",
-            walks: "4 walks/week",
+            walks: "3 walks/week",
             washes: "2 washes/week",
             grooming: "2 grooming/month",
             includes: [
-                "Feeding, litter cleanup, medication",
-                "Daily updates (WhatsApp + email)",
+                "Litter cleanup",
                 "Minor vet coordination",
             ],
             popular: true,
@@ -33,12 +30,12 @@ export default function Pricing() {
             id: "platinum",
             name: "Platinum Care",
             price: "KES 9,500",
-            pets: "Up to 10 pets/household",
-            walks: "6 walks/week",
+            pets: "Up to 9 pets/household",
+            walks: "5 walks/week",
             washes: "3 washes/week",
-            grooming: "4 grooming/month",
+            grooming: "3 grooming/month",
             includes: [
-                "Feeding, deep cleaning, special diets",
+                "Deep cleaning and litter cleanup",
                 "Full grooming & emergency support",
                 "Pick-up & drop-off service",
                 "Weekly health reports",
@@ -84,11 +81,11 @@ export default function Pricing() {
                                     <li key={index}>✅ {item}</li>
                                 ))}
                             </ul>
-
+                            {/* Add link to head to checkout page. */}
                             <button
-                                className={`w-full py-2.5 text-sm font-semibold rounded-lg transition ${tier.popular
-                                        ? "bg-amber-500 text-white hover:bg-amber-600"
-                                        : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                                className={`w-full py-2.5 text-sm font-semibold rounded-lg transition cursor-pointer ${tier.popular
+                                    ? "bg-amber-500 text-white hover:bg-amber-600"
+                                    : "bg-gray-100 text-gray-800 hover:bg-gray-200"
                                     }`}
                             >
                                 Choose {tier.name.split(" ")[0]}

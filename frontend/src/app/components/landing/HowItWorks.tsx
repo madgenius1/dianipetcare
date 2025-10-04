@@ -12,7 +12,7 @@ const petdetails =
 
 export default function HowItWorks() {
     return (
-        <section className="py-12 md:py-16 lg:py-20">
+        <section className="py-12 md:py-16 lg:py-20 bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat">
             <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 md:mb-12 text-center tracking-tight">
                     Pet Care Made Easier
@@ -20,7 +20,7 @@ export default function HowItWorks() {
 
                 <div className="lg:py-6 py-4 grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4">
                     {petdetails.map((detail, index) => (
-                        <div key={index} className="px-4 py-6 rounded-lg bg-white shadow md flex flex-col items-right gap-4">
+                        <div key={index} className="px-4 py-6 rounded-lg bg-white hover:shadow-xl transition-all duration-300 scale-105 flex flex-col items-right gap-4">
                             <div className="bg-gray-950 rounded-md p-2 w-8 h-8 flex items-center justify-center">
                                 <h2 className="text-white text-sm">{detail.number}</h2>
                             </div>
