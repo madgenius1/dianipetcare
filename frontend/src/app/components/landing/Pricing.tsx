@@ -78,7 +78,7 @@ export default function Pricing() {
 
                             <ul className="text-gray-600 text-sm space-y-2 mb-8">
                                 {tier.includes.map((item, index) => (
-                                    <li key={index}>✅ {item}</li>
+                                    <li key={index}>- {item}</li>
                                 ))}
                             </ul>
                             {/* Add link to head to checkout page. */}

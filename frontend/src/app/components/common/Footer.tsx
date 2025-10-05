@@ -61,7 +61,7 @@ export default function Footer() {
                             <p className="text-gray-950 font-semibold text-md">
                                 Your reliable pet care partner for dog walking, grooming, and boarding.
                             </p>
-                            <div className="py-4 flex flex-col gap-2">
+                            <div className="py-2 flex flex-col gap-2">
                             {links.map((link, index) =>
                             (
                                 <Link key={index} href={link.url} className="text-sm lg:text-md hover:underline font-medium text-white dark:text-gray-900">
@@ -70,11 +70,8 @@ export default function Footer() {
                             ))}
                         </div>
                         </div>
-                        
-                        <p className="py-4 text-sm lg:text-md font-medium text-white dark:text-gray-900">
-                            Diani, Ukunda
-                        </p>
-                        <div className="py-6 flex flex-row space-x-4 ">
+                    
+                        <div className="py-2 flex flex-row space-x-4 ">
                             {socials.map((social, index) =>
                             (
                                 <Link key={index} href={social.url} className="rounded-full">
@@ -94,7 +91,7 @@ export default function Footer() {
                                     <ul className="space-y-4">
                                         {section.links.map((link, linkIndex) => (
                                             <li key={linkIndex}>
-                                                <Link href={link.linkOne} className="text-gray-400 hover:text-white dark:text-gray-800 dark:hover:text-blue-700">
+                                                <Link href={link.linkOne} className="text-gray-400 hover:text-white hover:underline dark:text-gray-800 dark:hover:text-blue-700">
                                                     {link.textOne}
                                                 </Link>
                                             </li>
