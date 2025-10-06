@@ -1,47 +1,47 @@
 export default function Pricing() {
     const tiers = [
-        {
-            id: "bronze",
-            name: "Bronze Care",
-            price: "KES 2,500",
-            pets: "Up to 3 pets/household",
-            walks: "2 walks/week",
-            washes: "1 wash/week",
-            grooming: "0 grooming/month",
-            includes: [
-                "Basic cleanup",
-            ],
-        },
-        {
-            id: "gold",
-            name: "Gold Care",
-            price: "KES 5,000",
-            pets: "Up to 6 pets/household",
-            walks: "3 walks/week",
-            washes: "2 washes/week",
-            grooming: "2 grooming/month",
-            includes: [
-                "Litter cleanup",
-                "Minor vet coordination",
-            ],
-            popular: true,
-        },
-        {
-            id: "platinum",
-            name: "Platinum Care",
-            price: "KES 9,500",
-            pets: "Up to 9 pets/household",
-            walks: "5 walks/week",
-            washes: "3 washes/week",
-            grooming: "3 grooming/month",
-            includes: [
-                "Deep cleaning and litter cleanup",
-                "Full grooming & emergency support",
-                "Pick-up & drop-off service",
-                "Weekly health reports",
-            ],
-        },
-    ];
+    {
+        id: "bronze",
+        name: "Bronze Care",
+        price: "KES 2,800",
+        pets: "Up to 3 pets/household",
+        walks: "2 walks/week",
+        washes: "1 wash/week",
+        grooming: "0 grooming/month",
+        includes: [
+            "Basic cleanup",
+        ],
+    },
+    {
+        id: "gold",
+        name: "Gold Care",
+        price: "KES 5,000",
+        pets: "Up to 5 pets/household",
+        walks: "3 walks/week",
+        washes: "2 washes/week",
+        grooming: "1 grooming/month",
+        includes: [
+            "Litter cleanup",
+            "Minor vet coordination",
+        ],
+        popular: true,
+    },
+    {
+        id: "platinum",
+        name: "Platinum Care",
+        price: "KES 9,500",
+        pets: "Up to 9 pets/household",
+        walks: "5 walks/week",
+        washes: "3 washes/week",
+        grooming: "2 grooming/month",
+        includes: [
+            "Deep cleaning and litter cleanup",
+            "Full grooming & emergency support",
+            "Pick-up & drop-off service",
+            "Weekly health reports",
+        ],
+    },
+];
 
     return (
         <section className="py-12 md:py-16 lg:py-20 bg-white">

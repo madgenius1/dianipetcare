@@ -5,7 +5,7 @@ const tiers = [
     {
         id: "bronze",
         name: "Bronze Care",
-        price: "KES 2,500",
+        price: "KES 2,800",
         pets: "Up to 3 pets/household",
         walks: "2 walks/week",
         washes: "1 wash/week",
@@ -18,10 +18,10 @@ const tiers = [
         id: "gold",
         name: "Gold Care",
         price: "KES 5,000",
-        pets: "Up to 6 pets/household",
+        pets: "Up to 5 pets/household",
         walks: "3 walks/week",
         washes: "2 washes/week",
-        grooming: "2 grooming/month",
+        grooming: "1 grooming/month",
         includes: [
             "Litter cleanup",
             "Minor vet coordination",
@@ -35,7 +35,7 @@ const tiers = [
         pets: "Up to 9 pets/household",
         walks: "5 walks/week",
         washes: "3 washes/week",
-        grooming: "3 grooming/month",
+        grooming: "2 grooming/month",
         includes: [
             "Deep cleaning and litter cleanup",
             "Full grooming & emergency support",
