@@ -67,12 +67,18 @@ export default function Page({ params }: ServicePageProps) {
                 </div>
 
                 {/* Call to Action */}
-                <div className="py-10 flex items-center justify-center">
+                <div className="py-10 flex items-center lg:flex-row md:flex-row flex-col gap-4 justify-center">
                     <Link
                         href="/booking"
                         className="mt-4 px-10 py-6 text-lg font-bold bg-amber-400 text-gray-900 rounded-xl hover:bg-amber-300 transition duration-300 shadow-xl transform hover:scale-[1.03]"
                     >
                         Book Now
+                    </Link>
+                    <Link
+                        href="/packages"
+                        className="mt-4 px-10 py-6 text-lg font-bold bg-amber-400 text-gray-900 rounded-xl hover:bg-amber-300 transition duration-300 shadow-xl transform hover:scale-[1.03]"
+                    >
+                        Explore Care Packages
                     </Link>
                 </div>
             </div>
