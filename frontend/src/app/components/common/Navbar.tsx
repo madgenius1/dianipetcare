@@ -48,13 +48,13 @@ export default function Navbar() {
                 </div>
 
                 <div className="lg:flex md:flex hidden justify-end">
-                    <Link href="/contact" className="px-8 py-4 
+                    <Link href="tel:+254712345678" className="px-8 py-4 
                 text-lg font-bold 
                 bg-amber-400 text-gray-900 
                 rounded-xl 
                 hover:bg-amber-300 transition duration-300 
                 shadow-xl 
-                transform hover:scale-[1.03] hover:underline">Contact</Link>
+                transform hover:scale-[1.03] hover:underline">Call Us</Link>
                 </div>
 
                 <div

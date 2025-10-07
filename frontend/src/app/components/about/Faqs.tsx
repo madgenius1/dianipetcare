@@ -2,6 +2,7 @@
 "use client"
 
 import { useState } from 'react';
+import Link from "next/link";
 
 interface AccordionItem {
     title: string;
@@ -14,10 +15,6 @@ const accordionItems: AccordionItem[] = [
         description: "You can book directly through our website by selecting your preferred service, time, and date. Once confirmed, you will receive a notification and your assigned pet care professional’s details.",
     },
     {
-        title: "How do I become a regular client or subscriber?",
-        description: "You can subscribe to a monthly plan (Bronze, Silver, or Platinum) and enjoy consistent service, priority booking, and discounted add-ons like grooming or vet check coordination.",
-    },
-    {
         title: "Do you offer home visits or only in-facility services?",
         description: "We currently offer home visits for some services as we expand our facilities. You can request home visits for grooming, walking, or care as per your selected care package.",
     },
@@ -26,33 +23,16 @@ const accordionItems: AccordionItem[] = [
         description: "We currently accept M-Pesa, Visa, and MasterCard payments. All transactions are secure, and you will receive a digital receipt after every payment.",
     },
     {
-        title: "Can I cancel or reschedule my booking?",
-        description: "Absolutely. You can cancel or reschedule up to 24 hours before your appointment at no extra cost.",
+        title: "Do you handle multiple pets from the same household?",
+        description: "Yes! Our pricing tiers are built to accommodate up to 9 pets per household. Multi-pet families can enjoy discounted rates under our Gold and Platinum packages.",
     },
     {
         title: "What happens if my pet has special needs or medical conditions?",
         description: "During booking, you can specify any special requirements or health concerns. Our team will review them and assign a suitable, experienced caretaker for your pet’s condition.",
     },
-    {
-        title: "How do I know my pet is safe with your team?",
-        description: "All our pet caregivers go through pet care training and supervision. We also offer updates during your pet’s session so you always stay informed.",
-    },
-    {
-        title: "Do you handle multiple pets from the same household?",
-        description: "Yes! Our pricing tiers are built to accommodate up to 9 pets per household. Multi-pet families can enjoy discounted rates under our Gold and Platinum packages.",
-    },
-    {
-        title: "What if I am not available during the service time?",
-        description: "No problem. You can provide access instructions when booking (for example, if a caretaker can access your yard or meet a family member). We always confirm safe arrival and completion.",
-    },
-    {
-        title: "Do you provide emergency or last-minute services?",
-        description: "Yes, subject to staff availability. Emergency visits or same-day bookings can be made via WhatsApp or phone, and we’ll do our best to assign a nearby caretaker immediately.",
-    },
-    
 ]
 
-export default function Page() {
+export default function Faqs() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number) => {
@@ -60,7 +40,7 @@ export default function Page() {
     };
 
     return (
-        <section className="bg-white py-12 md:py-16 lg:py-18 overflow-hidden">
+        <section className="bg-[#f6f2e9] py-12 md:py-16 lg:py-18 overflow-hidden">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl text-center lg:text-5xl md:text-4xl font-extrabold text-gray-900 mb-4">
                     Frequently Asked Questions
@@ -98,6 +78,15 @@ export default function Page() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className="flex justify-center py-8">
+                        <Link
+                            href="/faqs"
+                            className="mt-4 px-10 py-6 text-lg font-bold bg-amber-400 text-gray-900 rounded-xl hover:bg-amber-300 transition duration-300 shadow-xl transform hover:scale-[1.03]"
+                        >
+                            More FAQs
+
+                        </Link>
                     </div>
                 </div>
             </div>

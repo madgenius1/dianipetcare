@@ -12,7 +12,7 @@ const petdetails =
 
 export default function HowItWorks() {
     return (
-        <section className="py-12 md:py-16 lg:py-20 bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat">
+        <section id="#working" className="py-12 md:py-16 lg:py-20 bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat">
             <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 md:mb-12 text-center tracking-tight">
                     Pet Care Made Easier

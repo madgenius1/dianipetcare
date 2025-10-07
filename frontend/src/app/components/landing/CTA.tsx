@@ -47,7 +47,7 @@ export default function AboutUsContact() {
                             and other fun-filled activities for pets.
                         </p>
                         <p className="text-lg text-gray-800 leading-relaxed">
-                            Starting informally and building on deep insight and experience, we now have over five years of collective experience in the industry. We are dedicated to our core mission of creating a safe, nurturing, and enriching environment for every pet under our care.
+                            Starting informally and building on deep insight and experience, we now have over four years of collective experience in the industry. We are dedicated to our core mission of creating a safe, nurturing, and enriching environment for every pet under our care.
                         </p>
 
                         <div className="mt-8 p-6 bg-white shadow-lg rounded-xl border border-blue-100">

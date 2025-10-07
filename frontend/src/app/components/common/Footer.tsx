@@ -45,7 +45,7 @@ export default function Footer() {
 
     return (
         <footer className=" bg-[#F6F2E9]">
-            <div className="lg:px-8 md:px-6 px-4 lg:py-20 md:py-16 py-12 max-w-screen-xl mx-auto">
+            <div className="lg:px-6 md:px-6 px-4 lg:py-20 md:py-16 py-12 max-w-screen-xl mx-auto">
                 <div className="flex lg:flex-row flex-col lg:justify-between gap-4 p-4">
                     {/* Left Content */}
                     <div className="lg:w-1/3 w-full flex flex-col gap-4 py-4">
