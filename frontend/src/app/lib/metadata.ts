@@ -176,7 +176,7 @@ export const packagesMetadata: Metadata = {
 
 // 🐶 Dynamic Service Page (for /services/[serviceId])
 export const getServiceMetadata = (serviceName: string): Metadata => ({
-  title: `${serviceName} | | ${siteName}`,
+  title: `${serviceName} | ${siteName}`,
   description: `Learn more about our ${serviceName} service — quality care for your pets in Diani.`,
   keywords: [
     `${serviceName} Diani`,
