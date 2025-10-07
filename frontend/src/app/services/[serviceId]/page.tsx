@@ -1,4 +1,6 @@
 
+import { getServiceMetadata } from "@/app/lib/metadata";
+
 import { services } from "@/app/lib/services";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -7,6 +9,11 @@ interface ServicePageProps {
     params: {
         serviceId: string;
     };
+}
+
+export async function generateMetadata({ params }: ServicePageProps) {
+  const serviceName = params.serviceId.replace(/-/g, " ");
+  return getServiceMetadata(serviceName);
 }
 
 export default function Page({ params }: ServicePageProps) {

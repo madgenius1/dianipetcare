@@ -1,4 +1,8 @@
 
+
+import { packagesMetadata } from "../lib/metadata";
+export const metadata = packagesMetadata;
+
 import PageHeader from "../components/ui/PageHeader"
 
 const tiers = [

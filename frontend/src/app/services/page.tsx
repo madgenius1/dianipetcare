@@ -1,8 +1,11 @@
 
+import { servicesMetadata } from "../lib/metadata";
+
 import PageHeader from "../components/ui/PageHeader"
 import { servicesList } from "../lib/servicedata"
 import ServiceCard from "../components/ui/ServiceCard"
 
+export const metadata = servicesMetadata;
 
 export default function Page() {
     return (

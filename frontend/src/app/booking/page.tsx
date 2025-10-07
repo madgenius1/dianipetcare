@@ -1,5 +1,10 @@
 
+import { bookingMetadata } from "../lib/metadata";
+export const metadata = bookingMetadata;
+
 import PageHeader from "../components/ui/PageHeader"
+
+
 
 export default function Page() {
     return (

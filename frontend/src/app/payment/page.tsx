@@ -1,5 +1,6 @@
 
-
+// import { paymentMetadata } from "../lib/metadata";
+// export const metadata = paymentMetadata;
 
 
 export default function Page(){

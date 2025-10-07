@@ -6,7 +6,6 @@ import ServicesSnapShot from "./components/landing/ServicesSnapShot";
 import Value from "./components/landing/Value";
 
 
-
 export default function Page() {
   return (
     <main>

@@ -1,4 +1,5 @@
 
+import { aboutMetadata } from "../lib/metadata";
 
 import PageHeader from "../components/ui/PageHeader"
 import Header from "../components/about/Header"
@@ -6,6 +7,8 @@ import WhatWeDo from "../components/about/WhatWeDo"
 import WhyChooseUs from "../components/about/WhyChooseUs"
 import Faqs from "../components/about/Faqs"
 import ContactUs from "../components/about/ContactUs"
+
+export const metadata = aboutMetadata;
 
 export default function Page() {
     return (

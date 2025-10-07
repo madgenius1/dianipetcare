@@ -25,7 +25,7 @@ const details = [
             { textOne: "Services", linkOne: "/services" },
             { textOne: "Booking", linkOne: "/booking" },
             { textOne: "About Us", linkOne: "/about" },
-            { textOne: "Subscribe", linkOne: "/subscribe" },
+            { textOne: "Care Packages", linkOne: "/packages" },
         ]
     },
     {
@@ -106,7 +106,7 @@ export default function Footer() {
                 <hr className="border-gray-700 py-4" />
                 <div className=" flex flex-col gap-y-2">
                     <p className=" text-sm text-center lg:text-md">
-                        <strong className="text-white dark:text-gray-900">Diani Pet Care | Copyright </strong> © {currentYear} | All Rights Reserved
+                        <strong className="text-white dark:text-gray-900">Diani Pet Care | </strong> © {currentYear} | All Rights Reserved
                     </p>
                     <p className="text-center">
                         A platform by{' '}

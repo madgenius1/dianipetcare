@@ -1,4 +1,6 @@
 
+
+//Add Testimonials from three users.
 export default function Testimonials() {
     <section className="min-h-screen">
             <div className="flex items-center justify-center text-center">

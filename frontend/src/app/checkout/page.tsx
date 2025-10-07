@@ -1,6 +1,7 @@
 
 
-
+import { checkoutMetadata } from "../lib/metadata";
+export const metadata = checkoutMetadata;
 
 
 export default function Page(){

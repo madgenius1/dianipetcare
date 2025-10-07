@@ -1,6 +1,9 @@
 
 "use client"
 
+// import { faqsMetadata } from "../lib/metadata";
+// export const metadata = faqsMetadata;
+
 import { useState } from 'react';
 
 interface AccordionItem {
