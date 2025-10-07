@@ -7,12 +7,13 @@ export default function OrderSummaryCard() {
     return (
         <div className="space-y-2">
             <h2 className="text-lg font-semibold mb-3">Order Summary</h2>
-            <p><strong>Pet:</strong> {pet?.name} ({pet?.type})</p>
-            <p><strong>Date:</strong> {booking?.date}</p>
-            <p><strong>Time:</strong> {booking?.time}</p>
-            <p><strong>Service:</strong> {booking?.service}</p>
-            <p><strong>Owner:</strong> {owner?.fullName}</p>
-            <p><strong>Phone:</strong> {owner?.phone}</p>
+            <p><strong>Pet:</strong> {pet.name} ({pet.type}), Age {pet.age}</p>
+            <p><strong>Service:</strong> {booking.service}</p>
+            <p><strong>Date:</strong> {booking.date}</p>
+            <p><strong>Time:</strong> {booking.time}</p>
+            <p><strong>Owner:</strong> {owner.fullName}</p>
+            <p><strong>Phone:</strong> {owner.phone}</p>
+            <p><strong>Email:</strong> {owner.email}</p>
         </div>
     )
 }
