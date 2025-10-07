@@ -37,9 +37,12 @@ export default function BookingDetailsCard() {
                 required
             >
                 <option value="">Select Service</option>
-                <option value="grooming">Grooming</option>
-                <option value="walk">Dog Walk</option>
-                <option value="vet">Vet Check</option>
+                <option value="grooming">Pet Grooming</option>
+                <option value="walk">Dog Walking</option>
+                <option value="vet">Pet Sitting</option>
+                <option value="vet">Pet Transport</option>
+                <option value="vet">Pet Boarding</option>
+                <option value="vet">Dog Training</option>
             </select>
 
             <button
