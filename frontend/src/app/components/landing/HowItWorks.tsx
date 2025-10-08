@@ -18,7 +18,7 @@ export default function HowItWorks() {
                     Pet Care Made Easier
                 </h2>
 
-                <div className="lg:py-6 py-4 grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4">
+                <div className="lg:py-6 py-4 grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4 px-4">
                     {petdetails.map((detail, index) => (
                         <div key={index} className="px-4 py-6 rounded-lg bg-white hover:shadow-xl transition-all duration-300 scale-105 flex flex-col items-right gap-4">
                             <div className="bg-gray-950 rounded-md p-2 w-8 h-8 flex items-center justify-center">

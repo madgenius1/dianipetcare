@@ -3,7 +3,7 @@ export default function Pricing() {
     {
         id: "bronze",
         name: "Bronze Care",
-        price: "KES 2,800",
+        price: "Ksh 2,800",
         pets: "Up to 3 pets/household",
         walks: "2 walks/week",
         washes: "1 wash/week",
@@ -15,7 +15,7 @@ export default function Pricing() {
     {
         id: "gold",
         name: "Gold Care",
-        price: "KES 5,000",
+        price: "Ksh 5,500",
         pets: "Up to 5 pets/household",
         walks: "3 walks/week",
         washes: "2 washes/week",
@@ -29,7 +29,7 @@ export default function Pricing() {
     {
         id: "platinum",
         name: "Platinum Care",
-        price: "KES 9,500",
+        price: "Ksh 10,500",
         pets: "Up to 9 pets/household",
         walks: "5 walks/week",
         washes: "3 washes/week",

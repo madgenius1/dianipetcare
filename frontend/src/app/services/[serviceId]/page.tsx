@@ -47,7 +47,7 @@ export default function Page({ params }: ServicePageProps) {
                 </div>
 
                 {/* Service Details */}
-                <div className="mt-10 space-y-8 text-gray-800">
+                <div className="mt-10 space-y-8 text-gray-800 px-4">
                     <section>
                         <h2 className="text-2xl font-bold mb-3">Ideal For</h2>
                         <p className="text-gray-700">{service?.idealFor}</p>
