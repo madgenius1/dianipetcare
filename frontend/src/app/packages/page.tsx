@@ -62,7 +62,7 @@ const pricingData: PricingPackage[] = [
         features: [
             { name: 'Pets/Household', value: 'Up to 9 pets' },
             { name: 'Walks/Week', value: 'Daily (60 min)' },
-            { name: 'Wash/Month', value: '3 Washes' },
+            { name: 'Wash/Month', value: '3 Premium Washes' },
             { name: 'Grooming/Month', value: '2 Full Grooming Sessions' },
         ],
     },
