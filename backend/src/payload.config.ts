@@ -10,10 +10,8 @@ import Bookings from './collections/Bookings';
 import Payments from './collections/Payments';
 
 export default buildConfig({
-  serverURL: process.env.FRONTEND_URL || 'http://localhost:3000',
-  admin: {
-    user: Users.slug,
-  },
+  serverURL: process.env.FRONTEND_URL,
+  admin: { user: Users.slug },
   collections: [
     Users,
     Pets,
@@ -26,7 +24,7 @@ export default buildConfig({
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
   db: mongooseAdapter({
-    url: process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/dianipetcare',
+    url: process.env.MONGO_URI as string,
   }),
-  secret: process.env.PAYLOAD_SECRET || 'supersecret',
+  secret: process.env.PAYLOAD_SECRET as string, // 👈 moved here
 });
