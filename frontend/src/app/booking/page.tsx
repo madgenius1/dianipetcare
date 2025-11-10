@@ -12,7 +12,6 @@ import OrderSummaryCard from './components/OrderSummaryCard'
 import PaymentOptionsCard from './components/PaymentOptionsCard'
 
 
-
 export default function BookingPage() {
     const { step } = useBookingStore()
 
@@ -23,7 +22,7 @@ export default function BookingPage() {
                 bgImage="/bookingdog.webp"
             />
             <div className="lg:py-18 md:py-14 py-12 px-4">
-                <div className="max-w-screen-xl mx-auto lg:px-8 md:px-6 p-6 bg-white rounded-lg shadow-md">
+                <div className="max-w-screen-md mx-auto p-8 bg-white rounded-2xl shadow-2xl border border-gray-100"> 
                     <ProgressBar />
 
                     {step === 1 && <PetDetailsCard />}

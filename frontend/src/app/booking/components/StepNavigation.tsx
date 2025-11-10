@@ -6,25 +6,25 @@ export default function StepNavigation() {
     const { step, setStep } = useBookingStore()
 
     return (
-        <div className="flex justify-between mt-8">
+        <div className="flex justify-between mt-10 pt-4 border-t border-gray-100">
             <button
-                className="px-4 py-2 bg-gray-200 rounded-md"
+                className="px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={step === 1}
                 onClick={() => setStep(step - 1)}
             >
-                Back
+                ← Back
             </button>
 
             {step < 5 ? (
                 <button
-                    className="px-4 py-2 bg-blue-600 text-white rounded-md"
+                    className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-150"
                     onClick={() => setStep(step + 1)}
                 >
-                    Next
+                    Next →
                 </button>
             ) : (
                 <button
-                    className="px-4 py-2 bg-green-600 text-white rounded-md"
+                    className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-150"
                     onClick={() => alert('Payment complete')}
                 >
                     Finish

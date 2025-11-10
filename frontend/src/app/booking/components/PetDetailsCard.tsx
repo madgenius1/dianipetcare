@@ -38,7 +38,7 @@ export default function PetDetailsCard() {
 
             <input
                 type="number"
-                placeholder="Age"
+                placeholder="Age (Months)"
                 value={form.age}
                 onChange={(e) => setForm({ ...form, age: Number(e.target.value) })}
                 className="w-full p-2 border rounded"

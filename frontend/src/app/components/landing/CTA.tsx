@@ -38,7 +38,7 @@ export default function AboutUsContact() {
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 md:mb-12 text-center tracking-tight">
                     About Diani Pet Care
                 </h2>
-                <div className="grid lg:grid-cols-2 gap-12 items-start">
+                <div className="grid lg:grid-cols-2 gap-12 items-start px-2">
                     <div className="space-y-6">
                         <p className="text-lg text-gray-800 leading-relaxed">
                             <span className="font-semibold">Diani Pet Care</span> is a trusted and passionate pet care service provider in Diani Beach, Ukunda, Kenya. We offer a comprehensive range of services including
