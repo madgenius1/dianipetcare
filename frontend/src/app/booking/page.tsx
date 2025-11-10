@@ -22,7 +22,7 @@ export default function BookingPage() {
                 bgImage="/bookingdog.webp"
             />
             <div className="lg:py-18 md:py-14 py-12 px-4">
-                <div className="max-w-screen-md mx-auto p-8 bg-white rounded-2xl shadow-2xl border border-gray-100"> 
+                <div className="max-w-screen-md mx-auto py-8 px-4 bg-white rounded-2xl shadow-2xl border border-gray-100"> 
                     <ProgressBar />
 
                     {step === 1 && <PetDetailsCard />}

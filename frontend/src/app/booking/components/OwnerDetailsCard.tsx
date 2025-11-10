@@ -1,4 +1,3 @@
-
 'use client'
 import { useBookingStore } from '../store/bookingStore'
 import { useState } from 'react'
@@ -12,15 +11,15 @@ export default function OwnerDetailsCard() {
     }
 
     return (
-        <div className="p-6 space-y-5 bg-white rounded-xl shadow-lg border border-gray-100">
-            <h2 className="text-xl font-bold text-gray-800 border-b pb-3 mb-2">Owner Details</h2>
+        <div className="space-y-3">
+            <h2 className="text-lg font-semibold">Owner Details</h2>
 
             <input
                 type="text"
                 placeholder="Full Name"
                 value={form.fullName}
                 onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out shadow-sm"
+                className="w-full p-2 border rounded"
                 required
             />
 
@@ -29,7 +28,7 @@ export default function OwnerDetailsCard() {
                 placeholder="Phone"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out shadow-sm"
+                className="w-full p-2 border rounded"
                 required
             />
 
@@ -38,18 +37,16 @@ export default function OwnerDetailsCard() {
                 placeholder="Email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-150 ease-in-out shadow-sm"
+                className="w-full p-2 border rounded"
                 required
             />
 
-            <div className="pt-4">
-                <button
-                    onClick={handleSave}
-                    className="w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-150 ease-in-out shadow-md"
-                >
-                    Save Owner Info
-                </button>
-            </div>
+            <button
+                onClick={handleSave}
+                className="px-4 py-2 bg-blue-600 text-white rounded cursor-pointer active:bg-gray-900"
+            >
+                Save Owner Info
+            </button>
         </div>
     )
 }

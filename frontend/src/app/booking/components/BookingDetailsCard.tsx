@@ -22,13 +22,23 @@ export default function BookingDetailsCard() {
                 required
             />
 
-            <input
-                type="time"
+            <select
                 value={form.time}
                 onChange={(e) => setForm({ ...form, time: e.target.value })}
                 className="w-full p-2 border rounded"
                 required
-            />
+            >
+                <option value="">8.30 AM</option>
+                <option value="grooming">9.00 AM</option>
+                <option value="walk">10.00 AM</option>
+                <option value="vet">11.00 AM</option>
+                <option value="vet">12.00 PM</option>
+                <option value="vet">1.00 PM</option>
+                <option value="vet">2.00 PM</option>
+                <option value="vet">3.00 PM</option>
+                <option value="vet">4.00 PM</option>
+                <option value="vet">4.30 PM</option>
+            </select>
 
             <select
                 value={form.service}
@@ -47,7 +57,7 @@ export default function BookingDetailsCard() {
 
             <button
                 onClick={handleSave}
-                className="px-4 py-2 bg-blue-600 text-white rounded"
+                className="px-4 py-2 bg-blue-600 text-white rounded cursor-pointer active:bg-gray-900"
             >
                 Save Booking Info
             </button>

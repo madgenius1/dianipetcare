@@ -3,19 +3,19 @@ import React from 'react'
 import { useBookingStore } from '../store/bookingStore'
 import { BiCheck } from 'react-icons/bi'
 
-const steps = ['Pet Info', 'Booking Info', 'Owner Info', 'Checkout', 'Payment']
+const steps = ['Pet Info', 'Booking Info', 'Owner Info', 'Confirm', 'Checkout']
 
 export default function ProgressBar() {
   const { step } = useBookingStore()
   
   return (
     <div className="flex justify-between items-center mb-10 relative">
-        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 -translate-y-1/2 mx-8 hidden sm:block">
+        {/* <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 -translate-y-1/2 mx-8 hidden sm:block">
             <div 
                 className="h-0.5 bg-blue-600 transition-all duration-500 ease-in-out" 
                 style={{ width: `${((step - 1) / (steps.length - 1)) * 100}%` }}
             ></div>
-        </div>
+        </div> */}
       {steps.map((label, index) => {
         const stepNumber = index + 1
         const isActive = step === stepNumber
@@ -24,7 +24,7 @@ export default function ProgressBar() {
         return (
           <div key={label} className="flex flex-col items-center z-10">
             <div
-              className={`w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 
+              className={`w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 
                 ${isCompleted 
                     ? 'bg-green-500 text-white shadow-lg'
                     : isActive 
