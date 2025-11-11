@@ -1,38 +1,40 @@
-import { create } from 'zustand'
+import { create } from "zustand";
+import { ServiceType } from "@/app/types/services";
+
 
 export interface PetDetails {
-  name: string
-  type: string
-  age: number | ''
+  name: string;
+  type: string;
+  age: number | "";
 }
 
 export interface BookingDetails {
-  date: string
-  time: string
-  service: string
+  date: string;
+  time: string;
+  service: ServiceType;
 }
 
 export interface OwnerDetails {
-  fullName: string
-  phone: string
-  email: string
+  fullName: string;
+  phone: string;
+  email: string;
 }
 
 export interface BookingStore {
-  step: number
-  pet: PetDetails
-  booking: BookingDetails
-  owner: OwnerDetails
-  setStep: (step: number) => void
-  setPet: (data: PetDetails) => void
-  setBooking: (data: BookingDetails) => void
-  setOwner: (data: OwnerDetails) => void
-  clearAll: () => void
+  step: number;
+  pet: PetDetails;
+  booking: BookingDetails;
+  owner: OwnerDetails;
+  setStep: (step: number) => void;
+  setPet: (data: PetDetails) => void;
+  setBooking: (data: BookingDetails) => void;
+  setOwner: (data: OwnerDetails) => void;
+  clearAll: () => void;
 }
 
-const initialPet: PetDetails = { name: '', type: '', age: '' }
-const initialBooking: BookingDetails = { date: '', time: '', service: '' }
-const initialOwner: OwnerDetails = { fullName: '', phone: '', email: '' }
+const initialPet: PetDetails = { name: "", type: "", age: "" };
+const initialBooking: BookingDetails = { date: "", time: "", service: "" };
+const initialOwner: OwnerDetails = { fullName: "", phone: "", email: "" };
 
 export const useBookingStore = create<BookingStore>((set) => ({
   step: 1,
@@ -44,5 +46,11 @@ export const useBookingStore = create<BookingStore>((set) => ({
   setPet: (data) => set({ pet: data }),
   setBooking: (data) => set({ booking: data }),
   setOwner: (data) => set({ owner: data }),
-  clearAll: () => set({ step: 1, pet: initialPet, booking: initialBooking, owner: initialOwner }),
-}))
+  clearAll: () =>
+    set({
+      step: 1,
+      pet: initialPet,
+      booking: initialBooking,
+      owner: initialOwner,
+    }),
+}));
